@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{9D17E9B1-D11B-3010-8C96-8E4FDB714A65}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\OGL\src\external\AntTweakBar-1.16\include;D:\workspace\OGL\src\external\glfw-3.1.2\include\GLFW;D:\workspace\OGL\src\external\glm-0.9.7.1;D:\workspace\OGL\src\external\glew-1.13.0\include;D:\workspace\OGL\src\external\assimp-3.0.1270\include;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src;D:\workspace\OGL\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\OGL\src\external\AntTweakBar-1.16\include;D:\workspace\OGL\src\external\glfw-3.1.2\include\GLFW;D:\workspace\OGL\src\external\glm-0.9.7.1;D:\workspace\OGL\src\external\glew-1.13.0\include;D:\workspace\OGL\src\external\assimp-3.0.1270\include;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src;D:\workspace\OGL\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\OGL\src\external\AntTweakBar-1.16\include;D:\workspace\OGL\src\external\glfw-3.1.2\include\GLFW;D:\workspace\OGL\src\external\glm-0.9.7.1;D:\workspace\OGL\src\external\glew-1.13.0\include;D:\workspace\OGL\src\external\assimp-3.0.1270\include;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src;D:\workspace\OGL\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\OGL\src\external\AntTweakBar-1.16\include;D:\workspace\OGL\src\external\glfw-3.1.2\include\GLFW;D:\workspace\OGL\src\external\glm-0.9.7.1;D:\workspace\OGL\src\external\glew-1.13.0\include;D:\workspace\OGL\src\external\assimp-3.0.1270\include;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src;D:\workspace\OGL\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\OGL\builds\CMakeFiles\22cad5a2970eb2591bf9e6609c345d48\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/OGL/src -BD:/workspace/OGL/builds --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace/OGL/builds/CMakeFiles/22cad5a2970eb2591bf9e6609c345d48/generate.stamp.rule;D:\Program Files\CMake\share\cmake-3.7\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindDoxygen.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\WriteBasicConfigVersionFile.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeCCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeSystem.cmake;D:\workspace\OGL\src\CMakeLists.txt;D:\workspace\OGL\src\external\CMakeLists.txt;D:\workspace\OGL\src\external\assimp-3.0.1270\code\CMakeLists.txt;D:\workspace\OGL\src\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletCollision\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletSoftBody\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\workspace\OGL\src\external\glfw-3.1.2\docs\Doxyfile.in;D:\workspace\OGL\src\external\glfw-3.1.2\examples\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\src\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw3.pc.in;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw_config.h.in;D:\workspace\OGL\src\external\glfw-3.1.2\tests\CMakeLists.txt;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace\OGL\builds\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\src\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\examples\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\tests\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\assimp-3.0.1270\code\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletSoftBody\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletCollision\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/OGL/src -BD:/workspace/OGL/builds --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace/OGL/builds/CMakeFiles/22cad5a2970eb2591bf9e6609c345d48/generate.stamp.rule;D:\Program Files\CMake\share\cmake-3.7\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindDoxygen.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\WriteBasicConfigVersionFile.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeCCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeSystem.cmake;D:\workspace\OGL\src\CMakeLists.txt;D:\workspace\OGL\src\external\CMakeLists.txt;D:\workspace\OGL\src\external\assimp-3.0.1270\code\CMakeLists.txt;D:\workspace\OGL\src\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletCollision\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletSoftBody\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\workspace\OGL\src\external\glfw-3.1.2\docs\Doxyfile.in;D:\workspace\OGL\src\external\glfw-3.1.2\examples\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\src\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw3.pc.in;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw_config.h.in;D:\workspace\OGL\src\external\glfw-3.1.2\tests\CMakeLists.txt;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace\OGL\builds\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\src\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\examples\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\tests\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\assimp-3.0.1270\code\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletSoftBody\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletCollision\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/OGL/src -BD:/workspace/OGL/builds --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace/OGL/builds/CMakeFiles/22cad5a2970eb2591bf9e6609c345d48/generate.stamp.rule;D:\Program Files\CMake\share\cmake-3.7\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindDoxygen.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\WriteBasicConfigVersionFile.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeCCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeSystem.cmake;D:\workspace\OGL\src\CMakeLists.txt;D:\workspace\OGL\src\external\CMakeLists.txt;D:\workspace\OGL\src\external\assimp-3.0.1270\code\CMakeLists.txt;D:\workspace\OGL\src\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletCollision\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletSoftBody\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\workspace\OGL\src\external\glfw-3.1.2\docs\Doxyfile.in;D:\workspace\OGL\src\external\glfw-3.1.2\examples\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\src\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw3.pc.in;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw_config.h.in;D:\workspace\OGL\src\external\glfw-3.1.2\tests\CMakeLists.txt;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace\OGL\builds\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\src\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\examples\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\tests\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\assimp-3.0.1270\code\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletSoftBody\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletCollision\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/OGL/src -BD:/workspace/OGL/builds --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace/OGL/builds/CMakeFiles/22cad5a2970eb2591bf9e6609c345d48/generate.stamp.rule;D:\Program Files\CMake\share\cmake-3.7\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindDoxygen.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.7\Modules\WriteBasicConfigVersionFile.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeCCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;D:\workspace\OGL\builds\CMakeFiles\3.7.0\CMakeSystem.cmake;D:\workspace\OGL\src\CMakeLists.txt;D:\workspace\OGL\src\external\CMakeLists.txt;D:\workspace\OGL\src\external\assimp-3.0.1270\code\CMakeLists.txt;D:\workspace\OGL\src\external\assimp-3.0.1270\contrib\zlib\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletCollision\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\BulletSoftBody\CMakeLists.txt;D:\workspace\OGL\src\external\bullet-2.81-rev2613\src\LinearMath\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\workspace\OGL\src\external\glfw-3.1.2\docs\Doxyfile.in;D:\workspace\OGL\src\external\glfw-3.1.2\examples\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\src\CMakeLists.txt;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw3.pc.in;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\workspace\OGL\src\external\glfw-3.1.2\src\glfw_config.h.in;D:\workspace\OGL\src\external\glfw-3.1.2\tests\CMakeLists.txt;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;D:\workspace\OGL\src\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace\OGL\builds\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\src\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\examples\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\glfw-3.1.2\tests\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\assimp-3.0.1270\contrib\zlib\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\assimp-3.0.1270\code\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletSoftBody\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletCollision\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\BulletDynamics\CMakeFiles\generate.stamp;D:\workspace\OGL\builds\external\bullet-2.81-rev2613\src\LinearMath\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
